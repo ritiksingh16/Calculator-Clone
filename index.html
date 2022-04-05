@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+
+    <div id="container">
+        
+        <table>
+           <thead>
+               <tr>
+                  <td><div id="screen" ></div></td>
+                  <td><button id="clear" class="btn-grad1" onclick="oneClear()">CE</button></td>
+               </tr>
+           </thead>
+           <tbody>
+               <tr id="numb">
+                   <td><button class="btn-grad" onclick="press('7');">7</button></td>
+                   <td><button class="btn-grad" onclick="press('8');">8</button></td>
+                   <td><button class="btn-grad" onclick="press('9');">9</button></td>
+                   <td><button class="btn-grad" onclick="press('0');">0</button></td>
+                   <td><button class="btn-grad3" onclick="press('+');">+</button></td>
+                   <td><button class="btn-grad" onclick="press('4');">4</button></td>
+                   <td><button class="btn-grad" onclick="press('5');">5</button></td>
+                   <td><button class="btn-grad" onclick="press('6');">6</button></td>
+                   <td><button class="btn-grad" onclick="press('.');">.</button></td>
+                   <td><button class="btn-grad3" onclick="press('-');">-</button></td>
+                   <td><button class="btn-grad" onclick="press('1');">1</button></td>
+                   <td><button class="btn-grad" onclick="press('2');">2</button></td>
+                   <td><button class="btn-grad" onclick="press('3');">3</button></td>
+                   <td><button class="btn-grad" onclick="compute('=');">=</button></td>
+                   <td><button class="btn-grad3" onclick="press('*');">x</button></td>
+                   <td><button class="btn-grad4" onclick="press('/');">/</button></td>
+
+               </tr>
+               <tr>
+                   <td><button id="allclear" class="btn-grad5" onclick="acClear()">AC</button></td>
+               </tr>
+
+           </tbody>
+        </table>
+    </div>
+
+
+
+    
+</body>
+<script>
+    var bag = "";
+    function press(num){
+        bag=bag+num;
+        document.getElementById("screen").innerText=bag;
+    }
+
+    function compute(){
+        var x = document.getElementById("screen").innerText
+        var y = eval(x)
+        document.getElementById("screen").innerText = y;
+    }
+
+
+   function acClear(){
+    document.getElementById("screen").innerText="";
+    bag="";
+    
+
+   }
+   function oneClear(){
+                 
+        var str=document.getElementById("screen").innerText
+          str = str.slice(0,-1)
+      bag = document.getElementById("screen").innerText=str;
+        
+         
+        
+                  
+   }
+
+   
+</script>
+</html>

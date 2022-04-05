@@ -1,0 +1,166 @@
+
+        #container{
+            /* background-color: rgb(54, 53, 53); */
+            height:320px;
+            width: 350px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            border-radius: 10px;
+            background-image:linear-gradient(#5e5b5b,#1d1c1c);
+        }
+        #screen{
+            background-color: rgb(245, 245, 245);
+            width: 250px;
+            height: 40px;
+            margin: 20px 10px 0px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            /* font-family: 'LED Digital 7', sans-serif; */
+            font-size: 30px;
+            text-align: right;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            
+        }
+
+        #clear{
+            height: 40px;
+            width: 60px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 20px 0px 0px;
+            border-radius: 10px;
+
+
+        }
+        #numb{
+            height: 170px;
+            width: 245px;
+            border-radius: 10px;
+             background-image:linear-gradient(#bdc3c7,#2c3e50);
+            display: grid;
+            grid-template-columns:repeat(5,58px);
+            grid-template-rows: repeat(4,50px);
+           margin:30px 0px 0px 14px;
+           gap: 5px;
+
+        }
+        #numb > td > button{
+            height: 50px;
+            width: 50px;
+            
+            /* border: 2px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           
+        }
+        
+        .btn-grad {background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB  51%, #403B4A  100%)}
+         .btn-grad {
+            
+           
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+          
+         .btn-grad1 {background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%)}
+         .btn-grad1 {
+           
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad1:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            
+          }
+
+          
+         .btn-grad3 {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+         .btn-grad3 {
+            margin-top: -16px;
+            margin-left: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad3:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+          .btn-grad4 {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+          .btn-grad4 {
+             
+             margin-left: 272px;
+             margin-top: -15px;
+             
+             text-align: center;
+             text-transform: uppercase;
+             transition: 0.5s;
+             background-size: 200% auto;
+             color: white;            
+             box-shadow: 0 0 20px #eee;
+             border-radius: 10px;
+             display: block;
+           }
+ 
+           .btn-grad4:hover {
+             background-position: right center; /* change the direction of the change here */
+             color: #fff;
+             text-decoration: none;
+           }
+          
+           
+         .btn-grad5 {background-image: linear-gradient(to right, #0099F7 0%, #F11712  51%, #0099F7  100%)}
+         .btn-grad5{
+            margin-left: 12px;
+            padding: 10px 110px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            /* box-shadow: 0 0 20px #eee; */
+            border-radius: 10px;
+            display: block;
+            
+          }
+
+          .btn-grad5:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+      
+         
+
+         
